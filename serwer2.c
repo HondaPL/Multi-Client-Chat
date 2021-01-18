@@ -233,13 +233,13 @@ int main(int argc , char *argv[])
                     name = ptr;
                     msg = ptr;
                     
-                    printf("Wiadomość od: %s\n", name);
+                    printf("Message from: %s\n", name);
                     
                     ptr = strtok(NULL, delim);
                     
                     dest = ptr;
                     
-                    printf("Wiadomość do: %s\n", dest);
+//                    printf("Wiadomość do: %s\n", dest);
                     
                     if(strcmp(dest,"Welcome") == 0) {
                         strcpy(user_list[i], name);
@@ -252,31 +252,32 @@ int main(int argc , char *argv[])
                                 strcat(msg, "$");
                             }
                         }
+                        msg[strlen(msg)-1] = '\0';
                         send(sd, msg, strlen(msg), 0 );
                     } else if(strcmp(dest,"File") == 0){
                         ptr = strtok(NULL, delim);
                         msg = ptr;
-                        printf("nazwa pliku: %s\n", msg);
+                        printf("Receiving file: %s\n", msg);
                         ptr = strtok(NULL, delim);
                         fileSize = ptr;
-                        printf("rozmiar pliku: %s\n", fileSize);
+//                        printf("rozmiar pliku: %s\n", fileSize);
                         sizeOfFile = atoi(fileSize);
-                        printf("rozmiar pliku w int: %lld\n", sizeOfFile);
+//                        printf("rozmiar pliku w int: %lld\n", sizeOfFile);
                         FILE *fp;
                         int n = 0;
                         char *filename = msg;
                         char bufferf[SIZE+1];
                         memset(bufferf, 0, sizeof bufferf);
-                        puts("a");
+//                        puts("a");
                         
                         fp = fopen(filename, "w");
                         while(sizeOfFile > 0) {
-                            printf("czekamy na tresc pliku\n");
+//                            printf("czekamy na tresc pliku\n");
                             n = recv(sd, bufferf, SIZE, 0);
                             if (n <= 0){
                                 break;
                             }
-                            printf("wpisujemy do pliku to co dostalismy: %s\n", bufferf);
+//                            printf("wpisujemy do pliku to co dostalismy: %s\n", bufferf);
 //                            fprintf(fp, "%s", bufferf);
                             if (fwrite(bufferf, sizeof(char), n, fp) != n)
                             {
@@ -284,14 +285,14 @@ int main(int argc , char *argv[])
                                 exit(1);
                             }
 //                            fputs(bufferf, fp);
-                            printf("zerujemy buffor\n");
+//                            printf("zerujemy buffor\n");
                             bzero(bufferf, SIZE);
-                            printf("zmniejszamy rozmiar\n");
-                            printf("zmniejszamy rozmiar\n");
-                            printf("Ile zostało do odebrania przed odjeciem: %lld \n", sizeOfFile);
+//                            printf("zmniejszamy rozmiar\n");
+//                            printf("zmniejszamy rozmiar\n");
+//                            printf("Ile zostało do odebrania przed odjeciem: %lld \n", sizeOfFile);
                             sizeOfFile = sizeOfFile - n;
-                            printf("Ile odebralismy teraz? %d \n", n);
-                            printf("Ile zostało do odebrania? %lld \n", sizeOfFile);
+//                            printf("Ile odebralismy teraz? %d \n", n);
+//                            printf("Ile zostało do odebrania? %lld \n", sizeOfFile);
                         }
                         fclose(fp);
                         printf("File created :) \n");
@@ -299,25 +300,30 @@ int main(int argc , char *argv[])
                         for(g = 0; g < 99; g++) {
 //                            printf("Co porownujemy %s", user_list[g]);
 //                            printf(" %s", dest);
-                            if(strcmp(user_list[g],dest) == 0){
-                                printf("%i", g);
+                            if(strcmp(user_list[g],name) == 0){
+//                                printf("%i", g);
                                 break;
                             }
                         }
 //                        char * msg2 = (char *) malloc(1 + strlen(name)+ strlen(msg) );
-                        puts("a");
+//                        puts("a");
                         strcat(name, "$");
-                        puts("a");
+//                        puts("a");
                         ptr = strtok(NULL, delim);
                         msg = ptr;
                         char * msg2 = (char *) malloc(1 + strlen(name)+ strlen(msg) );
                         strcpy(msg2, name);
                         strcat(msg2, msg);
-                        printf("Wiadomość : %s\n", msg2);
+//                        printf("Message : %s\n", msg2);
 //                        buffer[valread] = '\0'; 
                         msg2[strlen(msg2)] = '\0';
-                        sd = client_socket[g]; 
-					    send(sd , msg2 , strlen(msg2) , 0 ); 
+                        for(int v = 0; v < 99; v++) {
+                           if(v != g && strlen(user_list[v])>1) {
+//                           printf("gdzie wysylamy %d\n", v);
+                           sd = client_socket[v]; 
+					       send(sd , msg2 , strlen(msg2) , 0 ); 
+                           }
+                        }
                     }
 //                    buffer[0] = '\0';
 //                    msg[0] = '\0';
