@@ -101,7 +101,7 @@ namespace Messenger
             int totalBytes = 0;
 
             //Tutaj trzeba dodać, aby pobierał nazwę pliku
-            string temp = $"{nick}${fileName}${fs.Length}";
+            string temp = $"{nick}$File${fileName}${fs.Length}";
             byte[] buffer = ASCIIEncoding.ASCII.GetBytes(temp);
             ns.Write(buffer, 0, buffer.Length);
             Thread.Sleep(1000);
