@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Net;
-using System.Net.Sockets;
 using System.Windows.Forms;
-using System.Text;
-using MessengerLogic;
 
 namespace Messenger
 {

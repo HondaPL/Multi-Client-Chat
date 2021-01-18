@@ -1,0 +1,15 @@
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.csprojAssemblyReference.cache
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.FrmOnlineUsers.resources
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.FrmMenu.resources
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.FrmSend.resources
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.csproj.GenerateResource.cache
+C:\Users\lataw\source\repos\Messenger\Messenger\bin\Debug\Messenger.exe.config
+C:\Users\lataw\source\repos\Messenger\Messenger\bin\Debug\Messenger.exe
+C:\Users\lataw\source\repos\Messenger\Messenger\bin\Debug\Messenger.pdb
+C:\Users\lataw\source\repos\Messenger\Messenger\bin\Debug\MessengerLogic.dll
+C:\Users\lataw\source\repos\Messenger\Messenger\bin\Debug\MessengerLogic.pdb
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.Properties.Resources.resources
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.csproj.CoreCompileInputs.cache
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.csproj.CopyComplete
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.exe
+C:\Users\lataw\source\repos\Messenger\Messenger\obj\Debug\Messenger.pdb

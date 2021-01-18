@@ -1,0 +1,6 @@
+C:\Users\lataw\source\repos\Messenger\MessengerLogic\bin\Debug\MessengerLogic.dll
+C:\Users\lataw\source\repos\Messenger\MessengerLogic\bin\Debug\MessengerLogic.pdb
+C:\Users\lataw\source\repos\Messenger\MessengerLogic\obj\Debug\MessengerLogic.csprojAssemblyReference.cache
+C:\Users\lataw\source\repos\Messenger\MessengerLogic\obj\Debug\MessengerLogic.csproj.CoreCompileInputs.cache
+C:\Users\lataw\source\repos\Messenger\MessengerLogic\obj\Debug\MessengerLogic.dll
+C:\Users\lataw\source\repos\Messenger\MessengerLogic\obj\Debug\MessengerLogic.pdb

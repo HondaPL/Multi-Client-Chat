@@ -1,0 +1,6 @@
+/Users/adamhacia/Desktop/Messenger/Multi-Client-Chat/Messenger/Messenger/obj/Debug/Messenger.csprojAssemblyReference.cache
+/Users/adamhacia/Desktop/Messenger/Multi-Client-Chat/Messenger/Messenger/obj/Debug/Messenger.FrmOnlineUsers.resources
+/Users/adamhacia/Desktop/Messenger/Multi-Client-Chat/Messenger/Messenger/obj/Debug/Messenger.FrmMenu.resources
+/Users/adamhacia/Desktop/Messenger/Multi-Client-Chat/Messenger/Messenger/obj/Debug/Messenger.FrmSend.resources
+/Users/adamhacia/Desktop/Messenger/Multi-Client-Chat/Messenger/Messenger/obj/Debug/Messenger.csproj.GenerateResource.cache
+/Users/adamhacia/Desktop/Messenger/Multi-Client-Chat/Messenger/Messenger/obj/Debug/Messenger.csproj.CoreCompileInputs.cache
