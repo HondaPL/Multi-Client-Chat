@@ -73,7 +73,7 @@ public static IPAddress ip = IPAddress.Parse("192.168.1.51");
 Project is: _completed_
 
 ## Inspiration
-We wanted to a simple communicator with option to send files via network
+We wanted to create a simple communicator with option to send files via network
 
 ## Contact
 Created by [@HondaPL](https://hacia.students.wmi.amu.edu.pl/) and [@SmoothCrimminal](https://github.com/SmoothCrimminal) 
